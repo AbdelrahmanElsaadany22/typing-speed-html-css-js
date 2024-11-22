@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+}
+
+
+.head{
+    padding: 20px;
+    background-color: #29104A;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.big-container{
+    background-color: #eee;
+    min-height: 100vh;
+}
+.container{
+    margin: auto;
+    max-width: 900px;
+}
+.container .level{
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+}
+.container .level span{
+    color: #3f51b5;
+    font-weight: bold;
+}
+.container .button{
+    background-color: #150016;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.container .myWord{
+    display: none;
+}
+.container .myWord.show{
+    display: block;
+    background-color: transparent;
+    color:#F44336;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    user-select: none;;
+}
+.container .input{
+    margin: 15px 0;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 3px solid #FFE3D8;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 6px;
+    caret-color:#FFE3D8;
+}
+.container .words{
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .words div{
+    background-color: #29104A;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.container .data{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+}
+.container .data .score span,
+.container .data .time span{
+    font-weight: bold;
+    font-size: 20px;
+    color: #e91e63;
+}
+.start .three-buttons{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+.start h2{
+    padding: 20px;
+    background-color: #e91e63;
+    position: absolute;
+    top: 31%;
+    left: 37%;
+    z-index: 11;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.start .three-buttons div{
+    position: relative;
+    top:50px;
+    padding: 20px;
+    background-color:#009688;
+    border-radius: 6px;
+    color:white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.start{
+    opacity: 1;
+    transition: opacity 1s ease, visibility 0.5s ease
+}
+.start.hidden {
+    opacity: 0;
+    visibility: hidden; 
+}
+.container .finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+  }
+.container .finish .good {
+    color: var(--main-color);
+  }
+.container .finish .bad {
+    color: red;
+  }
